@@ -10,6 +10,10 @@ package idiomas.modelos;
  */
 public class Idioma {
 
+    public Idioma(String nombre) {
+        this.nombre = nombre;
+    }
+
     /**
      * @return the nombre
      */
@@ -23,7 +27,12 @@ public class Idioma {
     public void asignarNombre(String nombre) {
         this.nombre = nombre;
     }
+
     
-     
+    public String toString() {
+
+        return "Nombre: " + nombre;
+    }
+
     private String nombre;
 }

@@ -8,12 +8,20 @@ package autores.modelos;
  *
  * @author Ana Florencia Paz
  */
-
 public class Alumno {
-    
-    private String cx,nombre,apellido,clave;
+
+    private String cx, nombre, apellido, clave;
     private int DNI;
 
+    public Alumno(int DNI, String apellido, String nombre, String clave,String cx) {
+        this.cx = cx;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.clave = clave;
+        this.DNI = DNI;
+    }
+
+    
     public String verNombre() {
         return nombre;
     }
@@ -53,11 +61,11 @@ public class Alumno {
     public void asignarDNI(int DNI) {
         this.DNI = DNI;
     }
-    
-    void mostrar(){
-     System.out.println("Nombre y Apellido:" + nombre + apellido);
-     System.out.println("DNI:" + DNI);
-     System.out.println("Clave:" + clave);
-     System.out.println("CX:" + cx);
+
+    public void mostrar() {
+        System.out.println("Nombre y Apellido:" + nombre + apellido);
+        System.out.println("DNI:" + DNI);
+        System.out.println("Clave:" + clave);
+        System.out.println("CX:" + cx);
     }
 }

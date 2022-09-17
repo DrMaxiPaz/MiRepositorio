@@ -11,11 +11,20 @@ package lugares.modelos;
 public class Lugar {
     private String tipo;
 
+    public Lugar(String tipo) {
+        this.tipo = tipo;
+    }
+
     public String verTipo() {
         return tipo;
     }
 
     public void asignarTipo(String tipo) {
         this.tipo = tipo;
+    }
+    
+    public String toString() {
+
+        return "Tipo:" + tipo;
     }
 }

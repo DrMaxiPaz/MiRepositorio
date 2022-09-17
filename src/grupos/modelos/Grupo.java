@@ -10,9 +10,16 @@ package grupos.modelos;
  * @author Ana Florencia Paz
  */
 public class Grupo {
+
     private String nombre;
     private String descripcion;
 
+    public Grupo(String nombre, String descripcion) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+    }
+
+    
 
     public String verDescripcion() {
         return descripcion;
@@ -29,9 +36,9 @@ public class Grupo {
     public void asignarNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    void mostrar(){
-     System.out.println("Nombre :" + nombre);
-     System.out.println("Descripcion:" + descripcion);
+
+    public void mostrar() {
+        System.out.println("Nombre :" + nombre);
+        System.out.println("Descripcion:" + descripcion);
     }
 }

@@ -8,10 +8,18 @@ package autores.modelos;
  *
  * @author Ana Florencia Paz
  */
-
 public class Profesor {
-    private String nombre,apellido,cargo,clave;
+
+    private String nombre, apellido, cargo, clave;
     private int DNI;
+
+    public Profesor(int DNI, String apellido, String nombre, String clave, String cargo) {
+        this.cargo = cargo;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.clave = clave;
+        this.DNI = DNI;
+    }
 
     public String verNombre() {
         return nombre;
@@ -52,11 +60,11 @@ public class Profesor {
     public void asignarClave(String clave) {
         this.clave = clave;
     }
-    
-    void mostrar(){
-     System.out.println("Nombre y Apellido:" + nombre + apellido);
-     System.out.println("DNI:" + DNI);
-     System.out.println("Clave:" + clave);
-     System.out.println("Cargo:" + cargo);
+
+    public void mostrar() {
+        System.out.println("Nombre y Apellido:" + nombre + apellido);
+        System.out.println("DNI:" + DNI);
+        System.out.println("Clave:" + clave);
+        System.out.println("Cargo:" + cargo);
     }
 }
