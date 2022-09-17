@@ -9,5 +9,21 @@ package idiomas.modelos;
  * @author Ana Florencia Paz
  */
 public class Idioma {
-    String nombre;
+
+    /**
+     * @return the nombre
+     */
+    public String verNombre() {
+        return nombre;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void asignarNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+     
+    private String nombre;
 }

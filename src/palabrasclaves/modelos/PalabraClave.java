@@ -9,5 +9,13 @@ package palabrasclaves.modelos;
  * @author Ana Florencia Paz
  */
 public class PalabraClave {
-    String nombre;
+    private String nombre;
+
+    public String verNombre() {
+        return nombre;
+    }
+
+    public void asignarNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }

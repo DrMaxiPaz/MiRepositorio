@@ -9,5 +9,13 @@ package lugares.modelos;
  * @author Ana Florencia Paz
  */
 public class Lugar {
-    String tipo;
+    private String tipo;
+
+    public String verTipo() {
+        return tipo;
+    }
+
+    public void asignarTipo(String tipo) {
+        this.tipo = tipo;
+    }
 }
