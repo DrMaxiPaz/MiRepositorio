@@ -21,8 +21,8 @@ public class ControladorPrincipalGUI {
         ventana.setVisible(true); //se hace visible la ventana
         
         VentanaAMAlumno ventanaA = new VentanaAMAlumno(null);//se instancia la ventana
-        ventana.setLocationRelativeTo(null); //se centra la ventana
-        ventana.setVisible(true); //se hace visible la ventana
+        ventanaA.setLocationRelativeTo(null); //se centra la ventana
+        ventanaA.setVisible(true); //se hace visible la ventana
         
         VentanaAMProfesor ventanaP = new VentanaAMProfesor(null); //se instancia la ventana
         ventanaP.setLocationRelativeTo(null); //se centra la ventana
